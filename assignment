@@ -1,0 +1,33 @@
+1) Write a function getwords(text) to take a string, parse it and return words (tokens). 
+
+2) clearnwords.py -  Modify getwords and call it cleanwords(text). Cleanwords removes punctuation,
+
+removes words which are just numbers, convert all words to lower case and return them.
+
+3) wordfreq.py - open a text file, read the text, process it using clearnwords.
+
+Count the number of occurences of each unique word.
+
+4) Modify wordfreq.py to open a second file that contains only noise words. 
+Create a word frequency eliminating all the noise words. 
+(source of noise words)
+
+5) tagcloud.py - Use wordfreq to generate a html tag cloud (an html tag cloud displays words in alphabetical order.
+
+The higher the word frequency, the bigger the word. 
+
+6) linkedcloud.py - Modify tagcloud.py to link each word to all the lines that contain it.
+
+For example, when you click on a word, it should display all the lines where the word occurs. 
+
+7) Create new files and Change 3-4-5-6 to create bigram cloud (pairs of words) instead of single word cloud.
+
+Create a git repo, upload these tasks as you finish each task and send the url of that repo.
+Try to complete as many as possible, for any further clarification feel free to contact the concern person
+
+
+Name – Amarpreet Singh
+skype id: live:amarpreet.singh_9
+phone no: 9650005689
+
+git clone https://github.com/manishchaudhary21/trantor_assignment.git
