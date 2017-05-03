@@ -1,7 +1,13 @@
 import webbrowser
 from wordfreq import wordfrequency
-def generate_html_cloud():
-	words = wordfrequency('./assignment')
+from bigram_wordfrequency import bigramwordfre
+def generate_html_cloud(choice):
+	if choice == 'single':
+		words = wordfrequency('./assignment')
+	elif choice == 'bigram':
+		words = bigramwordfre('./assignment')
+	else:
+		print 'invalid choice';exit();
 	#~ min_font_size = 10
 	#~ max_font_size = 50
 	output = """<!DOCTYPE html><html><head><script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script></head><body><div style="width:80%; margin:10px auto;">"""
@@ -26,4 +32,7 @@ def generate_html_cloud():
 	filename = './wordtagcloud.html'
 	webbrowser.open_new_tab(filename)
 if __name__ == "__main__":
-	generate_html_cloud()	
+	choice = raw_input('please enter single or bigram: ')
+	generate_html_cloud(choice)
+		
+		
